@@ -18,7 +18,7 @@ fn main() {
                 let mut prev1: i32 = 1;
                 let mut result: i32 = 0;
 
-                for number in 2..fib_n {
+                for _ in 2..fib_n {
                     //println!("{}+{}", prev0, prev1);
                     result = prev0 + prev1;
                     prev0 = prev1;
