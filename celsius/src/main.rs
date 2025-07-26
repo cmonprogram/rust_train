@@ -15,12 +15,12 @@ fn main() {
         let out_temperature : f32;
         let type_temperature : String = args[1].to_string();
 
-        match type_temperature.as_str() {
-            "FAR\n" => {            
+        match type_temperature.as_str().trim() {
+            "FAR" => {            
                 out_temperature = (input_temperature  - 32.0) / (9.0 / 5.0);
                 println!("{} CEL", out_temperature);
             },
-            "CEL\n" => {            
+            "CEL" => {            
                 out_temperature = input_temperature * (9.0 / 5.0) + 32.0;
                 println!("{} FAR", out_temperature);
             },  
